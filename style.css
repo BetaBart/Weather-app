@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+    --main-color: #ffffff;
+    --bg-main: rgb(121, 183, 224);
+    --bg-features: rgb(101, 199, 194);
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 320px;
+    background-image: linear-gradient(var(--bg-main) 10%, var(--bg-features));
+    color: var(--main-color);
+    height: 100vh;
+    max-height: 700px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-app__city {
+    background-color: var(--bg-main);
+    border-radius: 5px;
+    border-color: var(--bg-features);
+    color: var(--main-color);
+    outline: none;
+}
+
+.weather-app_description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+
+.weather-app__temp-icon {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.weather-app__temp {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.big-temp {
+    font-size: 150px;
+}
+
+.big-degree {
+    font-size: 0.5em;
+    text-align: start;
+}
+
+.weather-app__temp-name {
+    margin: 20px auto 30px; 
+}
+
+.weather-app__features {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    border-top: 1px solid var(--bg-features);
+    padding: 15px 0;
+    row-gap: 20px;
+}
+
+.feature {
+    padding: 10px;
+    min-width: 100px;
+}
+
+.feature__icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(36deg) brightness(106%) contrast(101%);
+}
+
+.feature__icon_feels-like {
+    background-image: url(./icons/thermometer-half-solid.svg);
+}
+
+.feature__icon_wind {
+    background-image: url(./icons/wind-solid.svg);
+}
+
+.feature__icon_humidity {
+    background-image: url(./icons/tint-solid.svg);
+}
+
+.feature__icon_pressure {
+    background-image: url(./icons/tachometer-alt-solid.svg);
+}
+
+.feature__icon_temp-min {
+    background-image: url(./icons/arrow-down-solid.svg);
+}
+
+.feature__icon_temp-max {
+    background-image: url(./icons/arrow-up-solid.svg);
+}
+
+.feature__name {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.feature__value {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+

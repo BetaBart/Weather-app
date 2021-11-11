@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <select class="weather-app__city" id="city">
+                <option value="2643743">London</option>
+                <option value="625144">Minsk</option>
+                <option value="756135">Warszawa</option>
+                <option value="3099434">Gdansk</option>
+                <option value="703448">Kyiv</option>
+                <option value="2735943">Porto</option>
+                <option value="3081368">Wroclaw</option>
+            </select>
+        </header>
+
+        <main class="main">
+            <section class="weather-app__temp">
+                <h3 class="big-temp" id="curr-temp"></h3>
+                <span class="weather-app__temp-icon"></span>
+            </section>
+            <h2 class="weather-app__temp-name">Broken Clouds</h2>
+            <section class="weather-app__features">
+                <div class="feature feature_feels-like">
+                    <span class="feature__icon feature__icon_feels-like"></span>
+                    <h5 class="feature__name">Feels like</h5>
+                    <h5 class="feature__value" id="feels-like"></h5>
+                </div>
+                <div class="feature feature_wind">
+                    <span class="feature__icon feature__icon_wind"></span>
+                    <h5 class="feature__name">Wind speed</h5>
+                    <h5 class="feature__value" id="wind"></h5>
+                </div>
+                <div class="feature feature_humidity">
+                    <span class="feature__icon feature__icon_humidity"></span>
+                    <h5 class="feature__name">Humidity</h5>
+                    <h5 class="feature__value" id="humidity"></h5>
+                </div>
+                <div class="feature feature_pressure">
+                    <span class="feature__icon feature__icon_pressure"></span>
+                    <h5 class="feature__name">Pressure</h5>
+                    <h5 class="feature__value" id="pressure"></h5>
+                </div>
+                <div class="feature feature_temp-min">
+                    <span class="feature__icon feature__icon_temp-min"></span>
+                    <h5 class="feature__name">Min temp</h5>
+                    <h5 class="feature__value" id="temp-min"></h5>
+                </div>
+                <div class="feature feature_temp-max">
+                    <span class="feature__icon feature__icon_temp-max"></span>
+                    <h5 class="feature__name">Max temp</h5>
+                    <h5 class="feature__value" id="temp-max"></h5>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
