@@ -1,1 +1,1 @@
- https://betabart.github.io/Weather-app/
+ https://betabart.github.io/weather-app/
