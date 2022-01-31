@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    background-image: linear-gradient(var(--bg-main) 10%, var(--bg-features));
 }
 
 .wrapper {
@@ -27,7 +28,7 @@ body {
     width: 100%;
     max-width: 400px;
     min-width: 320px;
-    background-image: linear-gradient(var(--bg-main) 10%, var(--bg-features));
+    background: rgba(0, 0, 55, 0.3);
     color: var(--main-color);
     height: 100vh;
     max-height: 700px;
@@ -91,7 +92,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: auto;
     border-top: 1px solid var(--bg-features);
     padding: 15px 0;
     row-gap: 20px;
@@ -144,6 +144,15 @@ body {
 .feature__value {
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 480px) {
+    .wrapper {
+        background-image: linear-gradient(var(--bg-main) 10%, var(--bg-features));
+        max-width: none;
+        max-height: none;
+        height: 100vh;
+    }
+  }
 
 
 
